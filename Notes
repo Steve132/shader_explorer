@@ -1,0 +1,14 @@
+rga # convert glsl/spirv into various GCN/RDNA instructions (And also AMDIL)
+intel graphics compiler:  #convert spirv/opencl into LLVMIL and GenISA
+
+gpucc #(part of LLVM) #convert cuda into spirv
+NVPTX/AMDGPU  #(part of llvm) #convert LLVMIR into PTX/AMDIL
+glslc #convert GLSL/HLSL into spirv
+  spvc (part of shaderc) #convert spirv into GLSL/HLSL/MSL
+SPIRV-Tools #convert and optimize spirv
+glslangValidator #disassemble analyze and convert GLSL/HLSL
+SPIRV-LLVM-Translator #convert spirv into LLVMIL
+nvcc ? (convert cuda into cubin into ptx)
+https://developer.nvidia.com/cuda-llvm-compiler #convert NVVM (llvm-alike language) into PTX
+
+Goals:  Input GLSL/HLSL/SPIRV (possibly OpenCL/CUDA/DX11).  Output PTX/AMDIL/GCN/RDNA/GenISA/SPIRV
